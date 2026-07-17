@@ -1,0 +1,17 @@
+kvstore/Server.class
+kvstore/Server$InternalGetHandler.class
+kvstore/NodeInfo.class
+kvstore/VersionedValue.class
+kvstore/FailureDetector.class
+kvstore/ClusterCoordinator.class
+kvstore/WriteAheadLog.class
+kvstore/ClusterConfig.class
+kvstore/HttpUtil$Response.class
+kvstore/Server$ClientKeyHandler.class
+kvstore/Benchmark.class
+kvstore/ClusterCoordinator$QuorumException.class
+kvstore/HttpUtil.class
+kvstore/ConsistentHashRing.class
+kvstore/KVStore.class
+kvstore/Main.class
+kvstore/Server$InternalPutHandler.class
