@@ -128,14 +128,6 @@ N=3, W=2, R=2; 2000 requests, concurrency=20:
   write. More replicas improve durability, but add coordination cost
   to every write.
 
-**A bug found along the way:** the first version of the benchmark tool
-only treated network-level exceptions as failures — it never checked
-the HTTP status code. That meant `503 Quorum not reached` responses
-were silently counted as fast, successful requests, which initially
-made the tool report *better* performance as more nodes were killed
-(a rejected write returns instantly, without doing any real work).
-Fixed by checking the response status code explicitly.
-
 ## Tech stack
 
 Java 17, built-in `HttpServer`/`HttpClient` (no external networking
